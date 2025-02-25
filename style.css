@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+li {
+    font-size: 2erm;
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.main-head {
+    background-color: #211A44;
+    min-height: 10vh;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+nav ul {
+    display: flex;
+}
+#logo {
+    height: 80px;
+    width: 80px;
+    align-items: center;
+}
+nav ul li a{
+    padding: 10px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #5C5792;
+}
+/*Corps de la page accueil*/
+#accueil {
+    min-height: 85vh;
+    background: linear-gradient(rgb(221,136,207,0.6), transparent), url("./IMAGES/back.png");
+    background-size: cover;
+    background-position: center;
+    color: #4B164C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#accueil h1 {
+    font-size: 40px;
+    color: #211A44;
+}
+#accueil h3 {
+color: #211A44;
+margin-top: 60px;
+}
+button {
+    padding: 2rem 6rem;
+    background-color: #4B164C;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-left: 65px;
+}
+button:hover {
+    background-color: #211A44;
+}
+
+
+/*a propos */
+#a-propos {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    gap: 60px;
+    background-color: #ddd;
+    align-items: center;
+}
+#a-propos a {
+    color:#4B164C;
+}
+#a-propos a:hover {
+    text-decoration: underline;
+}
+.image-apropo {
+    height: 80vh;
+    width: auto;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: auto;
+    gap: 20px;
+}
+.infos h2 {
+    color: black;
+}
+.boutton-apropos {
+    padding: 20px;
+    background-color: #4B164C;
+    border: 1px solid black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    width: 15vw;
+    margin: 100px 0 0 100px;
+}
+
+/*services */
+#section {
+    width: 100vw;
+    height: 70vh;
+}
+.title h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 42px;
+}
+.title h1::after {
+    content: "";
+    height: 4px;
+    width: 230px;
+    background-color: #000;
+    display: block;
+    margin: auto;
+}
+.services {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+}
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 20px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover {
+    background-color: #b8d4de;
+    transition: 0.4s ease;
+}
+.card img {
+    font-size: 35px;
+    margin-bottom: 5px;
+    height: 100px;
+    width: 100px;
+}
+.card h2 {
+    font-size: 28px;
+    color: #4B164C;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #9F8DC3;
+}
+.card button {
+    font-size: 15px;
+    background-color: #4B164C;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+.card button:hover{
+    background-color: #211A44;
+    transition: 0.4s ease;
+}
+@media screen and (max-width: 940px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 85%;
+        display: flex;
+        margin: 20px 0;
+    }
+}
+
+/*Application téléchargement*/
+.section-app {
+    background-color: #9F8DC3;
+    height: auto;
+    height: 30vh;
+}
+.application {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 0 0 400px;
+}
+.card-app {
+    padding: 8px 8px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.card-app:hover {
+    background-color: #b8d4de;
+    transition: 0.4s ease;
+}
+.card-app img {
+    width: 200px;
+    height: 100px;
+    
+}
+
+footer {
+  
+    width: 100vw;
+    color: white;
+}
+.pied-de-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #211A44;
+    height: 20vh;
+    margin: 0;
+}
+.footer-element a {
+    display: block;
+    flex-direction: column;
+    font-size: 15px;
+}
+.copy {
+    text-align: center;
+   
+}

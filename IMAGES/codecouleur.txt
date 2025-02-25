@@ -1,0 +1,6 @@
+#211A44 button
+#5C5792
+#9F8DC3
+#BE9CC7
+#E3BAD5
+enrégistreur d'écran
