@@ -8,13 +8,13 @@
 <body>
     <header class = "main-head">
         <nav>
-        <img src="./IMAGES/mz_logo.png" alt="Logo de l'entreprise" id = "logo">
+            <span id ="logo">Mz Services </span>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#section">Services</a></li>
-                <li><a href="commande.php">Commander</a></li>
+                <li><a href="#commande">Commander</a></li>
                 <li><a href="#a-propos">A propos</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="#foot">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +22,7 @@
         <section id="accueil">
             <h1>Service d'Achats et Livraisons</h1>
             <h3>Faites vos commandes en toute simplicité, nous nous occupons du reste !</p>
-            <a href="commande.php"><button>Commander maintenant</button></a>
+            <a href="#commande"><button>Commander maintenant</button></a>
         </section>
         <section id = a-propos>
         <img src="./IMAGES/apropos.png" alt="image d'un livreur" class = "image-apropo">
@@ -34,7 +34,7 @@
             <p>Grâce à nos multiples partenaires, vous gagnez en temps et en diversité de services.
             </p>
             <p>Merci de faire partie de notre aventure. Si vous avez des questions ou des suggestions, cliquez sur le bouton si-après pour nous contacter.</p>
-            <button class = boutton-apropos>Nous contacter</button>
+            <a href="#foot"><button class = boutton-apropos>Nous contacter</button></a>
         </div>
         </section>
         <div id = "section">
@@ -71,6 +71,29 @@
                 </div> 
             </div>
         </div>
+        <div id = "commande">
+            <h2>Passer une commande</h2>
+            <form action="" method="POST">
+                <label>Nom :</label>
+                <input type="text" name="nom" required>
+                <label>Adresse :</label>
+                <input type="text" name="adresse" required>
+                <label>Type d'achat :</label>
+                <select name="type">
+                    <option value="supermarche">Supermarché</option>
+                    <option value="marche">Marché</option>
+                    <option value="pharmacie">Pharmacie</option>
+                </select>
+                <label>Liste des articles :</label>
+                <textarea name="articles" required></textarea>
+                <button type="submit" class = "btn-commande">Commander</button>
+                <div class = "btn-supp">
+                    <button type="submit" class = "btn-bon">Charger une ordonnance</button>
+                    <button type="submit" class = "btn-bon">Télécharger mon bon de commande</button>
+                </div>
+
+            </form>
+        </div>
         <div class = "section-app">
             <div class="title">
                 <h1>Télecharger notre application</h1>
@@ -89,37 +112,26 @@
             </div>
         </div>
     </main>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pied de page</title>
-    <link rel = "stylesheet" href= "footer.css">
-</head>
-<body>
-<footer>
-<div class="pied-de-page">
-        <div class="footer-element">
-            <h4>Adresse</h4>
-            <p>471, Boulevard du 13 Janvier</p>
-            <p>Atikoumé, Lomé, Togo</p>
-        </div>
-        <div class="footer-element">
-            <h4>Contact</h4>
-            <p>Numéro de telephone : <a href="tel:+22891621533">+228 91 62 15 33</a></p>
-            <P>Adresse email: <a href="mailto:contact@mzservices.com">Contact@mzservices.com</a></P>
-        </div>
-        <div class="footer-element">
-            <h4>Liens</h4>
-            <a href="">Presse</a>
-            <a href="">Aide</a>
-            <a href="">On recrute</a>
-        </div>
-    </div>
-    <p class = "copy">© 2025 Bek's - Tous droits réservés</p>
-</footer>
-</body>
-</html>
+    <footer id = 'foot'>
+        <div class="pied-de-page">
+                <div class="footer-element">
+                    <h4>Adresse</h4>
+                    <p>471, Boulevard du 13 Janvier</p>
+                    <p>Djidjolé, Lomé, Togo</p>
+                </div>
+                <div class="footer-element">
+                    <h4>Contact</h4>
+                    <p>Numéro de telephone : <a href="tel:+22891621533">+228 91 62 15 33</a></p>
+                    <P>Adresse email: <a href="mailto:contact@mzservices.com">Contact@Mzservices.com</a></P>
+                </div>
+                <div class="footer-element">
+                    <h4>Liens</h4>
+                    <a href="">Presse</a>
+                    <a href="">Aide</a>
+                    <a href="">On recrute</a>
+                </div>
+            </div>
+            <p class = "copy">© 2025 Bek's - Tous droits réservés</p>
+    </footer>
 </body>
 </html>

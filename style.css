@@ -23,16 +23,24 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    position: fixed;
+    background-color: #211A44;
+
 }
 nav ul {
     display: flex;
+    align-content: center;
+
 }
 #logo {
-    height: 80px;
-    width: 80px;
+    font-weight: bold;
+    text-align: center;
     align-items: center;
+    color: white;
+    font-size: 20px;
+    align-content: center;
 }
 nav ul li a{
     padding: 10px;
@@ -246,7 +254,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     background-color: #211A44;
-    height: 20vh;
+    height: 30vh;
     margin: 0;
 }
 .footer-element a {
@@ -257,4 +265,80 @@ footer {
 .copy {
     text-align: center;
    
+}
+
+/*commande*/
+#commande {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+#commande form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#commande h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 42px;
+}
+#commande h2::after {
+    content: "";
+    height: 4px;
+    width: 230px;
+    background-color: #000;
+    display: block;
+    margin: auto;
+}
+.form {
+    
+}
+#commande input {
+   padding: 15px;
+   margin: 0 500px 0 500px;
+   margin-top: 10px;
+}
+#commande form textarea{
+    padding: 15px;
+    margin: 0 500px 0 500px;
+    margin-top: 10px;
+}
+#commande form select {
+    padding: 15px;
+    margin: 0 500px 0 500px;
+    margin-top: 10px;
+}
+label {
+    margin: 0 500px 0 500px;
+    margin-top: 10px;
+}
+
+.btn-commande {
+    font-size: 15px;
+    background-color: #4B164C;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    width: 200px;
+    margin-left: 500px;
+    margin-top: 30px;
+}
+.btn-supp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    align-items: center;
+
+}
+.btn-bon {
+    background-color: #9F8DC3;
+    width: 100;
+    font-size: 12px;
+    height: 30px;
+    padding: 4px 6px;
+    border-radius: 5px;
 }
